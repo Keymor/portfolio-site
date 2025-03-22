@@ -1,25 +1,8 @@
 @import "tailwindcss";
 
-@theme {
-  --animate-popup: popup 1s easy-in forword;
-
-  @keyframes popup {
-    0% {
-      transform: rotate(-6deg);
-    }
-
-    30% {
-      transform: rotate(2deg);
-    }
-
-    100% {
-      transform: rotate(-4deg);
-    }
-  }
-}
-
 html {
   height: fit-content;
+  /* background-color: black; */
   background-color: rgb(255, 248, 254);
 }
 
@@ -101,10 +84,12 @@ html {
     bottom: -100vw;
     opacity: 0%;
   }
+
   50% {
     bottom: 0vw;
     opacity: 100%;
   }
+
   100% {
     bottom: 100vw;
     opacity: 0%;

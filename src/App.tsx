@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './index.css'
 import Header from './component/head'
 import About from './component/about'
 import Skills from './component/skills'
@@ -18,7 +18,7 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <body>
       <Header />
       <div className=' flex flex-col mx-auto'>
         <About />
@@ -26,7 +26,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-    </div>
+    </body>
   )
 }
 

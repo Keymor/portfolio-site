@@ -13,8 +13,8 @@ export default function About() {
     }, [])
 
     return (
-        <div className="w-full h-200 relative flex flex-row items-center">
-            <div className="ml-20 size-150 content-center">
+        <div className="w-full h-200 mt-8 sm:mt-0 relative flex flex-col sm:flex-row items-center gap-10 sm:gap-0">
+            <div className=" ml-8 mr-auto sm:ml-20 size-100 sm:size-150 content-center">
                 <div className="w-fit self-center mb-5 bg-pink-400/30 text-pink-500 text-[0.9rem] px-4 py-2 rounded-3xl font-bold">Front End Developer</div>
                 <p className="font-bold text-5xl">Hey! I'm Vladyslav Kutuzov</p>
                 <p className="font-bold text-5xl bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">I build friendly web</p>
@@ -34,8 +34,8 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="ml-auto mr-20 size-130 bg-white rounded-4xl border-pink-200 border-5 text-center content-center font-bold hover:size-140 hover:-rotate-6 hover:animate-popup duration-300">
-                {position}
+            <div className=" mx-auto sm:ml-auto sm:mr-20 size-90 sm:size-130 bg-white rounded-4xl border-pink-200 border-5 text-center content-center font-bold sm:hover:size-140 sm:hover:-rotate-6 sm:hover:animate-popup duration-300">
+                Photo
             </div>
             <div className='-z-1 absolute size-full '>
                 <div style={{ opacity: position > 1000 ? '100%' : '0%', transform: position > 1500 ? 'translateY(1500px)' : `translatey(${position}px)` }}
