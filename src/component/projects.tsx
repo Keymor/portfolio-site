@@ -5,7 +5,7 @@ export default function Projects() {
             <h1 className='w-fit text-4xl font-bold mx-auto'>Projects</h1>
             <p className='mx-auto text-zinc-400'>Some text about</p>
             <div className='w-full h-fit flex flex-col sm:flex-row gap-5'>
-                <div className='h-100 w-90 p-4 mx-auto sm:ml-auto gap-1 rounded-2xl border-1 border-pink-400 bg-gradient-to-b from-pink-950/15 to-white flex flex-col sm:not-hover:translate-0 sm:not-hover:duration-300 sm:hover-jump back'>
+                <div className='h-100 w-90 p-4 mx-auto sm:ml-auto gap-1 rounded-2xl border-1 border-pink-400 bg-gradient-to-b from-pink-950/15 to-white flex flex-col not-hover:translate-0 not-hover:duration-300 hover-jump back'>
                     <div className='h-50 w-80 sm:h-full sm:w-full bg-white rounded-2xl m-auto'></div>
                     <h1 className='font-bold text-2xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>Name of project</h1>
                     <p className='text-zinc-400'>Some text for some description. Some text for some description.</p>
@@ -16,7 +16,7 @@ export default function Projects() {
                     </div>
                     <button className='w-fit text-pink-400 mt-2'>Link {'>'}</button>
                 </div>
-                <div className='h-100 w-90 p-4 mx-auto sm:ml-auto gap-1 rounded-2xl border-1 border-pink-400 bg-gradient-to-b from-pink-950/15 to-white flex flex-col sm:not-hover:translate-0 sm:not-hover:duration-300 sm:hover-jump back'>
+                <div className='h-100 w-90 p-4 mx-auto sm:ml-auto gap-1 rounded-2xl border-1 border-pink-400 bg-gradient-to-b from-pink-950/15 to-white flex flex-col not-hover:translate-0 not-hover:duration-300 hover-jump back'>
                     <div className='h-50 w-80 sm:h-full sm:w-full bg-white rounded-2xl m-auto'></div>
                     <h1 className='font-bold text-2xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>Name of project</h1>
                     <p className='text-zinc-400'>Some text for some description. Some text for some description.</p>
@@ -27,7 +27,7 @@ export default function Projects() {
                     </div>
                     <button className='w-fit text-pink-400 mt-2'>Link {'>'}</button>
                 </div>
-                <div className='h-100 w-90 p-4 mx-auto sm:ml-auto gap-1 rounded-2xl border-1 border-pink-400 bg-gradient-to-b from-pink-950/15 to-white flex flex-col sm:not-hover:translate-0 sm:not-hover:duration-300 sm:hover-jump back'>
+                <div className='h-100 w-90 p-4 mx-auto sm:ml-auto gap-1 rounded-2xl border-1 border-pink-400 bg-gradient-to-b from-pink-950/15 to-white flex flex-col not-hover:translate-0 not-hover:duration-300 hover-jump back'>
                     <div className='h-50 w-80 sm:h-full sm:w-full bg-white rounded-2xl m-auto'></div>
                     <h1 className='font-bold text-2xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>Name of project</h1>
                     <p className='text-zinc-400'>Some text for some description. Some text for some description.</p>

@@ -79,28 +79,30 @@ export default function Skills() {
                 <div className='w-full h-30 flex items-center relative'>
                     {array.map((item, index) => {
                         return (
-                            <div style={{
-                                animation: 'shifting 10s linear infinite',
-                                animationDelay: `${10 - index}s`,
-                                transform: `scale(${hover === index + 1 ||
-                                    hover === index - 1 ||
-                                    hover === 0 && index === 9 ||
-                                    hover === 9 && index === 0
-                                    ? 1.10 : 1})`
-                            }}
+                            <div
+                                key={index}
+                                style={{
+                                    animation: 'shifting 10s linear infinite',
+                                    animationDelay: `${10 - index}s`,
+                                    transform: `scale(${hover === index + 1 ||
+                                        hover === index - 1 ||
+                                        hover === 0 && index === 9 ||
+                                        hover === 9 && index === 0
+                                        ? 1.10 : 1})`
+                                }}
                                 onMouseEnter={() => onMouse(index)}
                                 onMouseLeave={() => onMouseLeave()}
-                                className='absolute size-8 sm:size-25 bg-white shadow-md rounded-md flex right-0 opacity-0 translate-x-[50%] sm:hover:size-35 duration-200'>
-                                <div /* className='size-8 bg-amber-300 rounded-4xl m-auto' */></div>
+                                className='absolute size-8 sm:size-25 bg-white shadow-md rounded-md flex right-0 opacity-0 translate-x-[50%] hover:size-35 duration-200'>
+                                <div /* className='size-8 bg-amber-300 rounded-4xl m-auto' */>{item.img}</div>
                             </div>
                         )
                     })}
                 </div>
             </div>
             <div className='w-90 h-fit mx-auto bg-white rounded-4xl border-5 border-pink-200 flex flex-wrap gap-6.5 p-6.5 sm:hidden'>
-                {arraySmall.map((iitem, index) => {
+                {arraySmall.map((item, index) => {
                     return (
-                        <div className='size-20 bg-white rounded-lg drop-shadow-md'></div>
+                        <div key={index} className='size-20 bg-white rounded-lg drop-shadow-md'>{item.img}</div>
                     )
                 })}
             </div>

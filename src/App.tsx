@@ -18,7 +18,7 @@ function App() {
   }, [])
 
   return (
-    <body>
+    <main className='overflow-x-hidden'>
       <Header />
       <div className=' flex flex-col mx-auto'>
         <About />
@@ -26,7 +26,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-    </body>
+    </main>
   )
 }
 
