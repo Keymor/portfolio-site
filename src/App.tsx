@@ -20,7 +20,7 @@ function App() {
   return (
     <main className='overflow-x-hidden'>
       <Header />
-      <div className=' flex flex-col mx-auto'>
+      <div className=' flex flex-col mx-auto w-330 mx-auto'>
         <About />
         <Skills />
         <Projects />
