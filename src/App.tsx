@@ -5,6 +5,7 @@ import About from './component/about'
 import Skills from './component/skills'
 import Projects from './component/projects'
 import Contact from './component/contact'
+import Dev from './component/dev'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,11 +21,12 @@ function App() {
   return (
     <main className='overflow-x-hidden'>
       <Header />
-      <div className=' flex flex-col mx-auto w-330 mx-auto'>
+      <div className=' flex flex-col xl:w-330 mx-auto'>
         <About />
         <Skills />
         <Projects />
         <Contact />
+        <Dev />
       </div>
     </main>
   )
