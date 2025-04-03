@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <div className='h-fit mt-20 sm:p-5 pt-20 flex flex-col gap-5 bg-gradient-to-b from-purple-100/80 to-pink-50/0'>
+        <div className='h-fit mt-20 sm:p-5 pt-20 flex flex-col gap-5 bg-gradient-to-b from-purple-100/80 to-pink-50/0 xl:bg-none'>
             <div className='w-fit self-center mx-auto bg-pink-400/30 text-pink-500 px-4 py-2 rounded-3xl font-bold'>My Work</div>
             <h1 className='w-fit text-4xl font-bold mx-auto'>Projects</h1>
             <p className='mx-auto text-zinc-400'>Some text about</p>

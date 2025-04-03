@@ -2,7 +2,7 @@ import linkedIn from '../img/l.png'
 
 export default function Contact() {
     return (
-        <div className='flex flex-col bg-gradient-to-b from-purple-100/50 to-pink-50/0 py-22 mt-20'>
+        <div className='flex flex-col bg-gradient-to-b from-purple-100/50 to-pink-50/0 xl:bg-none py-22 mt-20'>
             <div className='w-fit self-center mx-auto bg-pink-400/30 text-pink-500 px-4 py-2 rounded-3xl font-bold'>Hair Me</div>
             <h1 className='w-fit text-4xl font-bold mx-auto'>Get in tuch</h1>
             <p className='text-zinc-400 w-fit mx-auto'>Some text</p>

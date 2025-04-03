@@ -82,6 +82,7 @@ export default function Skills() {
                             <div
                                 key={index}
                                 style={{
+                                    zIndex: hover === index ? 10 : 0,
                                     animation: 'shifting 10s linear infinite',
                                     animationDelay: `${10 - index}s`,
                                     transform: `scale(${hover === index + 1 ||

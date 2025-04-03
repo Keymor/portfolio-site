@@ -38,16 +38,28 @@ export default function About() {
                 Photo
             </div>
             <div className='-z-1 absolute size-full '>
-                <div style={{ opacity: position > 1000 ? '100%' : '0%', transform: position > 1500 ? 'translateY(1500px)' : `translatey(${position}px)` }}
-                    className='size-200 bg-pink-200 rounded-full absolute -left-50 -bottom-80 blur-3xl duration-900'></div>
-                <div style={{ transform: position > 1500 ? 'translateY(1500px)' : `translateY(${position}px)` }}
-                    className='size-100 bg-purple-200 rounded-full absolute right-0 blur-2xl duration-300'></div>
-                <div style={{ transform: `translateY(-${position}px)` }}
-                    className='size-90 bg-red-200 rounded-full absolute -bottom-20 -left-40 blur-xl'></div>
-                <div style={{ transform: `translateY(-${position / 2}px)` }}
-                    className='size-50 bg-purple-200 rounded-full absolute -bottom-30 left-70 blur-2xl'></div>
-                <div className='size-35 bg-red-100 rounded-full absolute -bottom-30 left-100 blur-lg animate-move-up'></div>
-                <div style={{ animation: 'move-up 6s linear infinite' }} className='size-35 bg-pink-100 rounded-full absolute -bottom-30 right-100 blur-lg'></div>
+                <div
+                    style={{ opacity: position > 1000 ? '100%' : '0%', transform: position > 1500 ? 'translateY(1500px)' : `translatey(${position}px)` }}
+                    className='size-200 bg-pink-200 rounded-full absolute -left-50 -bottom-80 blur-3xl duration-900'>
+                </div>
+                <div
+                    style={{ transform: position > 1500 ? 'translateY(1500px)' : `translateY(${position}px)` }}
+                    className='size-100 bg-purple-200 rounded-full absolute right-0 blur-2xl duration-300'>
+                </div>
+                <div
+                    style={{ transform: `translateY(-${position}px)` }}
+                    className='size-90 bg-red-200 rounded-full absolute -bottom-20 -left-40 blur-xl'>
+                </div>
+                <div
+                    style={{ transform: `translateY(-${position / 2}px)` }}
+                    className='size-50 bg-purple-200 rounded-full absolute -bottom-30 left-70 blur-2xl'>
+                </div>
+                <div
+                    className='size-35 bg-red-100 rounded-full absolute -bottom-30 left-100 blur-lg animate-move-up'>
+                </div>
+                <div
+                    style={{ animation: 'move-up 6s linear infinite' }} className='size-35 bg-pink-100 rounded-full absolute -bottom-30 right-100 blur-lg'>
+                </div>
             </div>
         </div>
     )

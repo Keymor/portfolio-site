@@ -81,7 +81,7 @@ html {
 
 @keyframes move-up {
   0% {
-    bottom: -100vw;
+    bottom: -72vw;
     opacity: 0%;
   }
 
@@ -91,7 +91,7 @@ html {
   }
 
   100% {
-    bottom: 100vw;
+    bottom: 72vw;
     opacity: 0%;
   }
 }
