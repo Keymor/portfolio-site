@@ -2,7 +2,19 @@ import express from 'express'
 import cors from 'cors'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+
+dotenv.config()
 const app = express()
+
+const User = mongoose.model('Contacts', {
+    name: String,
+    email: String
+})
+
+mongoose.connect(process.env.MONGODB_URI)
+    .then(() => console.log('connected to MONGOOSE!'))
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -15,11 +27,9 @@ app.get('/home', (req, res) => {
     res.send(`<h1>${__dirname}, ${__filename}</h1>`)
 })
 
-app.post('/submit', (req, res) => {
-    console.log(req.body);
-    const {serverM} = req.body
-    req.body.serverM = 'Server response: '
-    res.json(req.body);
+app.post('/submit', async(req, res) => {
+    const user = new User(req.body)
+    await user.save()
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
