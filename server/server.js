@@ -30,6 +30,7 @@ app.get('/home', (req, res) => {
 app.post('/submit', async(req, res) => {
     const user = new User(req.body)
     await user.save()
+    console.log('New user added!')
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
